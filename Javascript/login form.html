@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form </title>
+    <script>
+        function match(){
+            var userName= f1.userName.value;
+            var Password= f1.Password.value;
+            if(userName!= "Web"){
+                alert("Username doesn't match.")
+            }
+            else if(Password != "Technology"){
+                alert("Password doesn't match.")
+            }
+            else if(userName =="Web" & Password == "Technology"){
+                alert("Successfully Login")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+    <center><h1>Login Form</h1>
+        <label for="a" >Username: </label>
+    <input type="text" name="userName"  id="a" placeholder="Enter the username"  </center><br><br>
+        <label for="b" >Password: </label>
+    <input type="Password" id="b" name="Password" placeholder="Enter the password"  </center><br><br>
+    <button type="button" onclick="match()">Continue</button>
+</form></body>
+</html>
