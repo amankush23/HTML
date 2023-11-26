@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest among three</title>
+    <script>
+        function largest_num(){
+            var a = prompt("Enter the First Number:")
+            var b = prompt("Enter the Second Number:")
+            var c = prompt("Enter the Third Number:")
+            if(a>b & a>c){
+                alert(a," is the largest number.")
+            }
+            else if(b>a & b>c){
+                alert(b," is the largest number.")
+            }
+            else if(c>a & c>b){
+                alert(c," is the largest number.")
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>To find the largest number</h1>
+    <button type="button" onclick="largest_num()">Find the largest Number</button>
+</body>
+</html>
